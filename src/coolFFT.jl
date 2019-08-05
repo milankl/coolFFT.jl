@@ -1,6 +1,6 @@
 module coolFFT
 
-export fft
+export coolfft
 
 include("fft.jl")
 
