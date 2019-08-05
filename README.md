@@ -4,7 +4,7 @@
 
 # coolFFT
 
-A pure-Julia type-flexible implementation of the [Cooley-Tukey FFT algorithm](https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm)
+A pure-Julia type-flexible implementation of the [Cooley-Tukey FFT algorithm](https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm). Works with any number format `T` as long as conversion from Float64, i.e. `T(::Float64)`,`+,-,*` are defined. 
 
 # Usage
 
