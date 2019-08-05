@@ -4,7 +4,7 @@
 
 # coolFFT
 
-A pure-Julia type-flexible implementation of the Cooley-Tukey FFT algorithm
+A pure-Julia type-flexible implementation of the [Cooley-Tukey FFT algorithm](https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm)
 
 # Usage
 
