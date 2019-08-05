@@ -13,19 +13,20 @@ using SoftPosit
 using coolFFT
 
 x = Posit16.(collect(1:8.0));
-y  = coolfft(x)
+y = coolfft(x)
 ```
 returns
 ```julia
-8-element Array{Any,1}:
-    Posit16(0x7480)                  
-    Posit16(0xa000) + Posit16(0x69a8)im
-    Posit16(0xa000) + Posit16(0x6000)im
-    Posit16(0xa000) + Posit16(0x4a88)im
-    Posit16(0xa000)                  
-    Posit16(0xa000) - Posit16(0x4a80)im
-    Posit16(0xa000) - Posit16(0x6000)im
-    Posit16(0xa000) - Posit16(0x69a8)im
+julia> y
+8-element Array{Complex{Posit16},1}:
+ Posit16(0x7480) + Posit16(0x0000)im
+ Posit16(0xa000) + Posit16(0x69a8)im
+ Posit16(0xa000) + Posit16(0x6000)im
+ Posit16(0xa000) + Posit16(0x4a88)im
+ Posit16(0xa000) + Posit16(0x0000)im
+ Posit16(0xa000) - Posit16(0x4a80)im
+ Posit16(0xa000) - Posit16(0x6000)im
+ Posit16(0xa000) - Posit16(0x69a8)im
 ```
 
 # Installation
