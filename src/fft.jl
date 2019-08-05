@@ -1,8 +1,8 @@
 """Cooley-Tukey FFT algorithm."""
 function coolfft(x::Array{T,1}) where {T<:AbstractFloat}
 
-    y1 = Any[]
-    y2 = Any[]
+    y1 = Complex{T}[]
+    y2 = Complex{T}[]
 
     n = length(x)
     if n == 1
